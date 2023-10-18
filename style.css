@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    border-radius: 20%;
+    margin: 2.2rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color: #d95980;
+}
+.yellow{
+    background-color: #f99b45;
+}
+.green{
+    background-color: #63aac0;
+}
+.purple{
+    background-color: #819ff9;
+}
+.flash{
+    animation: shade 1s linear;
+}
+@keyframes shade {
+    0%{
+        box-shadow: 0px 0px 0px rgb(95, 61, 61);
+    }
+    50%{
+        background-color: white;
+        box-shadow: 0px 0px 30px rgb(148, 98, 98);
+    }
+    100%{
+        box-shadow: 0px 0px 0px rgb(95, 61, 61);
+    }
+}
+.user-flash{
+    animation: shadeG 0.4s linear;
+}
+@keyframes shadeG {
+    0%{
+        box-shadow: 0px 0px 0px rgb(95, 61, 61);
+    }
+    50%{
+        background-color: green;
+        box-shadow: 0px 0px 30px rgb(157, 239, 139);
+    }
+    100%{
+        box-shadow: 0px 0px 0px rgb(95, 61, 61);
+    }
+}
+@media (max-width : 550px) {
+    .btn{
+        height: 150px;
+        width: 150px;border-radius: 15%;
+        margin: 1.5rem;
+    }
+    .line-one{
+        padding:0;
+    }
+}
